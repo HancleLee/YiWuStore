@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SocialPostHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dea-d7-klR">
+                    <rect key="frame" x="8" y="0.0" width="304" height="102"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dea-d7-klR" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="41A-1y-9MF"/>
+                <constraint firstAttribute="bottom" secondItem="dea-d7-klR" secondAttribute="bottom" id="Jd8-2B-Kce"/>
+                <constraint firstItem="dea-d7-klR" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="M6h-qp-plS"/>
+                <constraint firstAttribute="trailing" secondItem="dea-d7-klR" secondAttribute="trailing" constant="8" id="pcs-yM-LTJ"/>
+            </constraints>
+            <connections>
+                <outlet property="textView" destination="dea-d7-klR" id="k6t-C4-eRp"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="322"/>
+        </collectionReusableView>
+    </objects>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmOrderVC">
+            <connections>
+                <outlet property="totalPriceLabel" destination="UL7-tg-1Vk" id="UNP-EF-pCS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVg-Qi-h9t">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPt-x6-RTi">
+                            <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Pkz-9d-SmM"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyd-7e-RR0">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="8DU-PV-hbx"/>
+                                <constraint firstAttribute="height" constant="35" id="kG8-kZ-zcL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="确认订单" backgroundImage="btn_red_bg">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="confimOrderBtnClick:" destination="-1" eventType="touchUpInside" id="9gp-9Q-EwJ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="total price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UL7-tg-1Vk">
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.92941176469999998" green="0.22352941179999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="VPt-x6-RTi" firstAttribute="leading" secondItem="VVg-Qi-h9t" secondAttribute="leading" id="1f1-hZ-bNY"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="3yI-Yg-9tP"/>
+                        <constraint firstAttribute="trailing" secondItem="VPt-x6-RTi" secondAttribute="trailing" id="T2l-eA-4us"/>
+                        <constraint firstItem="VPt-x6-RTi" firstAttribute="top" secondItem="VVg-Qi-h9t" secondAttribute="top" id="WBP-Cx-Bel"/>
+                        <constraint firstAttribute="height" constant="46" id="gfa-Em-eOw"/>
+                        <constraint firstItem="UL7-tg-1Vk" firstAttribute="leading" secondItem="VVg-Qi-h9t" secondAttribute="leading" constant="15" id="isW-xO-Mzw"/>
+                        <constraint firstAttribute="trailing" secondItem="eyd-7e-RR0" secondAttribute="trailing" constant="10" id="pof-Sk-tg8"/>
+                        <constraint firstItem="eyd-7e-RR0" firstAttribute="centerY" secondItem="VVg-Qi-h9t" secondAttribute="centerY" id="x78-hk-6fc"/>
+                        <constraint firstItem="UL7-tg-1Vk" firstAttribute="centerY" secondItem="VVg-Qi-h9t" secondAttribute="centerY" id="x9N-NG-2lQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VVg-Qi-h9t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8wl-xk-F4R"/>
+                <constraint firstAttribute="trailing" secondItem="VVg-Qi-h9t" secondAttribute="trailing" id="APY-iE-p7u"/>
+                <constraint firstAttribute="bottom" secondItem="VVg-Qi-h9t" secondAttribute="bottom" id="oes-U0-Zo3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_red_bg" width="85" height="35"/>
+    </resources>
+</document>

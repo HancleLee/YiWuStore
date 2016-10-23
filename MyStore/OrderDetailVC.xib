@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailVC">
+            <connections>
+                <outlet property="leftButton" destination="936-6b-1lH" id="PuQ-57-gUi"/>
+                <outlet property="priceBackView" destination="pVX-pa-kGq" id="gEl-yw-ntI"/>
+                <outlet property="priceLabel" destination="sVR-Na-4DV" id="Zxh-JV-pJq"/>
+                <outlet property="rightButton" destination="pWH-Ia-ueB" id="KVK-BI-SGY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVX-pa-kGq">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTm-0G-x4z">
+                            <color key="backgroundColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="PUQ-4z-WbR"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWH-Ia-ueB">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="6Vb-BM-tcl"/>
+                                <constraint firstAttribute="height" constant="35" id="Pqe-dN-yNa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="确认订单" backgroundImage="btn_red_bg">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="rightBtnClick:" destination="-1" eventType="touchUpInside" id="AXl-1k-RQO"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="total price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVR-Na-4DV">
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.92941176469999998" green="0.22352941179999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="936-6b-1lH">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="9qb-4e-y4V"/>
+                                <constraint firstAttribute="height" constant="35" id="P0f-Sl-byS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="取消订单" backgroundImage="btn_gray_bg">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="leftBtnClick:" destination="-1" eventType="touchUpInside" id="QGV-bt-pZP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="sVR-Na-4DV" firstAttribute="centerY" secondItem="pVX-pa-kGq" secondAttribute="centerY" id="0eC-QK-4R3"/>
+                        <constraint firstItem="pWH-Ia-ueB" firstAttribute="centerY" secondItem="pVX-pa-kGq" secondAttribute="centerY" id="2QL-Jc-wLa"/>
+                        <constraint firstItem="nTm-0G-x4z" firstAttribute="top" secondItem="pVX-pa-kGq" secondAttribute="top" id="HIF-m2-5cJ"/>
+                        <constraint firstItem="pWH-Ia-ueB" firstAttribute="leading" secondItem="936-6b-1lH" secondAttribute="trailing" constant="10" id="L7x-5c-f3i"/>
+                        <constraint firstItem="936-6b-1lH" firstAttribute="centerY" secondItem="pWH-Ia-ueB" secondAttribute="centerY" id="NJ1-1E-VtA"/>
+                        <constraint firstItem="nTm-0G-x4z" firstAttribute="leading" secondItem="pVX-pa-kGq" secondAttribute="leading" id="UqV-en-SMO"/>
+                        <constraint firstAttribute="height" constant="46" id="s91-Py-rqn"/>
+                        <constraint firstAttribute="trailing" secondItem="nTm-0G-x4z" secondAttribute="trailing" id="tpR-0D-9aS"/>
+                        <constraint firstItem="sVR-Na-4DV" firstAttribute="leading" secondItem="pVX-pa-kGq" secondAttribute="leading" constant="15" id="vZI-yN-xAh"/>
+                        <constraint firstAttribute="trailing" secondItem="pWH-Ia-ueB" secondAttribute="trailing" constant="10" id="zvt-R7-agr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pVX-pa-kGq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GSU-gq-0cA"/>
+                <constraint firstAttribute="trailing" secondItem="pVX-pa-kGq" secondAttribute="trailing" id="Yzf-SM-qPH"/>
+                <constraint firstAttribute="bottom" secondItem="pVX-pa-kGq" secondAttribute="bottom" id="e3h-Yz-5Mq"/>
+            </constraints>
+            <point key="canvasLocation" x="56.5" y="69.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_gray_bg" width="85" height="35"/>
+        <image name="btn_red_bg" width="85" height="35"/>
+    </resources>
+</document>

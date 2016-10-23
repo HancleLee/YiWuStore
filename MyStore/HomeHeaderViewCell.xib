@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeHeaderViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="7pn-R5-SPZ">
+                        <rect key="frame" x="20" y="15" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ZDo-OO-cSJ"/>
+                            <constraint firstAttribute="width" constant="40" id="gXx-JL-A3n"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osC-SY-Bsb">
+                        <rect key="frame" x="0.0" y="60" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="hj4-t4-zM4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="7pn-R5-SPZ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="0nE-na-I0P"/>
+                <constraint firstItem="osC-SY-Bsb" firstAttribute="top" secondItem="7pn-R5-SPZ" secondAttribute="bottom" constant="5" id="85z-gw-Uw0"/>
+                <constraint firstAttribute="bottom" secondItem="osC-SY-Bsb" secondAttribute="bottom" id="cGQ-Px-UB2"/>
+                <constraint firstAttribute="trailing" secondItem="osC-SY-Bsb" secondAttribute="trailing" id="tba-bq-liR"/>
+                <constraint firstItem="osC-SY-Bsb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xKl-8a-AJD"/>
+            </constraints>
+            <connections>
+                <outlet property="imgView" destination="7pn-R5-SPZ" id="YYd-Xc-NuY"/>
+                <outlet property="imgViewHeightConstraint" destination="ZDo-OO-cSJ" id="3RF-Hy-PdP"/>
+                <outlet property="imgViewHeightWidthConstraint" destination="gXx-JL-A3n" id="dIl-9u-e6R"/>
+                <outlet property="titleLabel" destination="osC-SY-Bsb" id="P2G-Xq-geC"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="banner" width="375" height="160"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="157"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDv-54-gdZ">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[订单状态]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi3-Uf-5ee">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="M4Q-Mb-Eiq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.22352941179999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-go-P7m">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TC1-go-P7m" firstAttribute="leading" secondItem="fDv-54-gdZ" secondAttribute="leading" constant="15" id="2tG-M5-ldA"/>
+                            <constraint firstAttribute="trailing" secondItem="TC1-go-P7m" secondAttribute="trailing" constant="15" id="CPm-QC-qTF"/>
+                            <constraint firstItem="gi3-Uf-5ee" firstAttribute="top" secondItem="fDv-54-gdZ" secondAttribute="top" constant="17" id="Euf-g5-qwW"/>
+                            <constraint firstAttribute="height" constant="115" id="SNR-UO-bP5"/>
+                            <constraint firstItem="TC1-go-P7m" firstAttribute="top" secondItem="gi3-Uf-5ee" secondAttribute="bottom" constant="14" id="W4D-YM-okn"/>
+                            <constraint firstAttribute="bottom" secondItem="TC1-go-P7m" secondAttribute="bottom" constant="20" id="dqm-Ch-B7C"/>
+                            <constraint firstItem="gi3-Uf-5ee" firstAttribute="leading" secondItem="fDv-54-gdZ" secondAttribute="leading" constant="15" id="kvd-9c-1SM"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  周三 9:00  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GQ-SX-uBI">
+                        <color key="backgroundColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="iDx-gg-4nT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="fDv-54-gdZ" secondAttribute="trailing" constant="14" id="4wn-yV-nHq"/>
+                    <constraint firstItem="fDv-54-gdZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="14" id="FPe-cf-1UC"/>
+                    <constraint firstItem="8GQ-SX-uBI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="IYi-BP-iPN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fDv-54-gdZ" secondAttribute="bottom" constant="-8" id="m0b-sZ-E3R"/>
+                    <constraint firstItem="8GQ-SX-uBI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="v0H-yO-moG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentBackView" destination="fDv-54-gdZ" id="9eu-ce-GR9"/>
+                <outlet property="contentLabel" destination="TC1-go-P7m" id="JJ5-mX-9eC"/>
+                <outlet property="timeLabel" destination="8GQ-SX-uBI" id="cMU-IZ-XFw"/>
+                <outlet property="titleLabel" destination="gi3-Uf-5ee" id="hqB-2c-qnj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
